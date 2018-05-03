@@ -1,0 +1,9 @@
+c:\users\alex\documents\visual studio 2012\Projects\DeveloperClient\DeveloperClient\bin\Debug\DeveloperClient.exe.config
+c:\users\alex\documents\visual studio 2012\Projects\DeveloperClient\DeveloperClient\bin\Debug\DeveloperClient.exe
+c:\users\alex\documents\visual studio 2012\Projects\DeveloperClient\DeveloperClient\bin\Debug\DeveloperClient.pdb
+c:\users\alex\documents\visual studio 2012\Projects\DeveloperClient\DeveloperClient\obj\Debug\DeveloperClient.csprojResolveAssemblyReference.cache
+c:\users\alex\documents\visual studio 2012\Projects\DeveloperClient\DeveloperClient\obj\Debug\DeveloperClient.Form1.resources
+c:\users\alex\documents\visual studio 2012\Projects\DeveloperClient\DeveloperClient\obj\Debug\DeveloperClient.Properties.Resources.resources
+c:\users\alex\documents\visual studio 2012\Projects\DeveloperClient\DeveloperClient\obj\Debug\DeveloperClient.csproj.GenerateResource.Cache
+c:\users\alex\documents\visual studio 2012\Projects\DeveloperClient\DeveloperClient\obj\Debug\DeveloperClient.exe
+c:\users\alex\documents\visual studio 2012\Projects\DeveloperClient\DeveloperClient\obj\Debug\DeveloperClient.pdb
