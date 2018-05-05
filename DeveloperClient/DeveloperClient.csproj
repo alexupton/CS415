@@ -44,7 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientAPI.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="ExternalLauncher.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

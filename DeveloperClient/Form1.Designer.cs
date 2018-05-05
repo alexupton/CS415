@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.registrationLink = new System.Windows.Forms.LinkLabel();
             this.exitButton = new System.Windows.Forms.Button();
             this.loginButton = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ideSelectorBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.passBox = new System.Windows.Forms.MaskedTextBox();
             this.userBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.registrationLink = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,9 +46,9 @@
             this.groupBox1.Controls.Add(this.registrationLink);
             this.groupBox1.Controls.Add(this.exitButton);
             this.groupBox1.Controls.Add(this.loginButton);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.ideSelectorBox);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.maskedTextBox1);
+            this.groupBox1.Controls.Add(this.passBox);
             this.groupBox1.Controls.Add(this.userBox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -58,6 +58,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login";
+            // 
+            // registrationLink
+            // 
+            this.registrationLink.AutoSize = true;
+            this.registrationLink.Location = new System.Drawing.Point(290, 34);
+            this.registrationLink.Name = "registrationLink";
+            this.registrationLink.Size = new System.Drawing.Size(168, 20);
+            this.registrationLink.TabIndex = 9;
+            this.registrationLink.TabStop = true;
+            this.registrationLink.Text = "New User Registration";
             // 
             // exitButton
             // 
@@ -78,17 +88,18 @@
             this.loginButton.TabIndex = 7;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // comboBox1
+            // ideSelectorBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.ideSelectorBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ideSelectorBox.FormattingEnabled = true;
+            this.ideSelectorBox.Items.AddRange(new object[] {
             "NetBeans"});
-            this.comboBox1.Location = new System.Drawing.Point(95, 110);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(173, 28);
-            this.comboBox1.TabIndex = 6;
+            this.ideSelectorBox.Location = new System.Drawing.Point(95, 110);
+            this.ideSelectorBox.Name = "ideSelectorBox";
+            this.ideSelectorBox.Size = new System.Drawing.Size(173, 28);
+            this.ideSelectorBox.TabIndex = 6;
             // 
             // label3
             // 
@@ -99,14 +110,15 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "IDE";
             // 
-            // maskedTextBox1
+            // passBox
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(95, 63);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PasswordChar = '*';
-            this.maskedTextBox1.Size = new System.Drawing.Size(173, 26);
-            this.maskedTextBox1.TabIndex = 4;
-            this.maskedTextBox1.UseSystemPasswordChar = true;
+            this.passBox.Location = new System.Drawing.Point(95, 63);
+            this.passBox.Name = "passBox";
+            this.passBox.PasswordChar = '*';
+            this.passBox.Size = new System.Drawing.Size(173, 26);
+            this.passBox.TabIndex = 4;
+            this.passBox.UseSystemPasswordChar = true;
+            this.passBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.passBox_MaskInputRejected);
             // 
             // userBox
             // 
@@ -133,16 +145,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Username";
             // 
-            // registrationLink
-            // 
-            this.registrationLink.AutoSize = true;
-            this.registrationLink.Location = new System.Drawing.Point(290, 34);
-            this.registrationLink.Name = "registrationLink";
-            this.registrationLink.Size = new System.Drawing.Size(168, 20);
-            this.registrationLink.TabIndex = 9;
-            this.registrationLink.TabStop = true;
-            this.registrationLink.Text = "New User Registration";
-            // 
             // Form1
             // 
             this.AcceptButton = this.loginButton;
@@ -165,10 +167,10 @@
         private System.Windows.Forms.TextBox userBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox passBox;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button loginButton;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ideSelectorBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel registrationLink;
     }
