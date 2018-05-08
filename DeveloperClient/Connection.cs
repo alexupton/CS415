@@ -18,7 +18,11 @@ namespace DeveloperClient
         private string response{get; set;}
 
         private const string IP_ADDR = "134.129.125.246";
+<<<<<<< HEAD
         private const int PORT = 39000;
+=======
+        private const int PORT = 49000;
+>>>>>>> origin/master
 
 
         public Connection(Form1 sender)
@@ -51,7 +55,11 @@ namespace DeveloperClient
             
         }
 
+<<<<<<< HEAD
         public bool Login(string userName, string password, string IDE)
+=======
+        public bool Login(string userName, string password)
+>>>>>>> origin/master
         {
             try
             {
@@ -59,8 +67,12 @@ namespace DeveloperClient
                 char[] tempChars = userName.ToCharArray();
                 int length = tempChars.Length;
                 List<Byte> byteList = ASCIIEncoding.ASCII.GetBytes(tempChars).ToList();
+<<<<<<< HEAD
                 byteList.AddRange(ASCIIEncoding.ASCII.GetBytes(":" + password));
                 byteList.AddRange(ASCIIEncoding.ASCII.GetBytes(":" + IDE));
+=======
+                byteList.AddRange(ASCIIEncoding.ASCII.GetBytes(password));
+>>>>>>> origin/master
                 byte[] bytesToSend = byteList.ToArray();
                 netStream.Write(bytesToSend, 0, bytesToSend.Length);
                 if (GetResponse())

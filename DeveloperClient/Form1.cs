@@ -54,7 +54,11 @@ namespace DeveloperClient
             if (checkFields())
             {
                 Connection serverConn = new Connection(this);
+<<<<<<< HEAD
                 if (serverConn.Login(userBox.Text, passBox.Text, ideSelectorBox.SelectedItem.ToString()))
+=======
+                if (serverConn.Login(userBox.Text, passBox.Text))
+>>>>>>> origin/master
                 {
                     ExternalLauncher launcher = new ExternalLauncher();
                     launcher.Launch();
